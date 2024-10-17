@@ -46,8 +46,8 @@ public class Homepage {
     public void doSearch(List<String> numberList, int miles,String outputFilepath) throws IOException {
         utils.waitForElementToBeClickable(acceptCookiesButton, 5);
         acceptCookiesButton.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
         for (i = 0; i < numberList.size(); i++) {
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
             utils.waitForElementToBeClickable(vehicleRegTxtbox, 120);
             vehicleRegTxtbox.sendKeys(numberList.get(i));
             utils.waitForElementToBeClickable(mileageTxtbox, 30);

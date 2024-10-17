@@ -16,6 +16,4 @@ Project Setup
 1.Clone the Repository
 2.Install Dependencies
 3.Running Tests
-Using Maven
-To run all tests in cmd:
-mvn clean test
+

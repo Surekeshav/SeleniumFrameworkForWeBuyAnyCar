@@ -25,18 +25,6 @@ public class MyStepdefs {
         vehicleNumberList = utils.readTextFromTextFile(filePath);
     }
 
-  /*  @And("I search for a car valuation using vehicle registration number")
-    public void iSearchForACarValuationUsingVehicleRegistrationNumber() throws IOException {
-        int randomnumber = new Utils().randomNumberGenerator(100000);
-        homepage.doSearch(vehicleNumberList, randomnumber);
-    }
-
-
-    @Then("I should be able to see respective car details and assert it from {string} file")
-    public void iShouldBeAbleToSeeRespectiveCarDetailsAndAssertItFromFile(String filePath) throws IOException {
-        homepage.assertTheVehicleDetails(filePath, vehicleNumberList);
-    }
-*/
     @Then("I search and assert the car details using {string} file")
     public void iSearchAndAssertTheCarDetailsUsingFile(String filePath) throws IOException {
         int randomnumber = new Utils().randomNumberGenerator(100000);
